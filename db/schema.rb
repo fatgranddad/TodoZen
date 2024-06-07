@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_06_07_144249) do
+ActiveRecord::Schema[7.0].define(version: 2024_06_07_145650) do
   create_table "tasks", charset: "utf8", force: :cascade do |t|
     t.string "name"
     t.text "details"
-    t.date "due_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "due_date"
   end
 
 end
